@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gridcard{
+ 
+padding-left: 2vmax;
+padding-right: 2vmax;
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50vh,1fr));
+  row-gap: 10px;
+}
+
+.overlay {
+  position: absolute;
+  height: 20vh;
+  width: 50vh;
+  opacity: 0;
+  transition: .5s ease;
+  
+}
+
+.card:hover .overlay {
+scale: 1.1;
+  opacity: 1;
+
+}
+.text {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+}
